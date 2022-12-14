@@ -106,6 +106,16 @@ def custom_forecast_plot():
 
 """
 ### Step 2: Seleccionar horizonte de previsión
+
+"""
+La siguiente imágen muestra en pesos la tendencia del pornostico
+"""
+custom_forecast_plot()
+
+
+metric_df = forecast.set_index('ds')[['yhat']].join(sp_sample.set_index('ds').y).reset_index()
+metric_df.dropna(inplace=True)
+
 Tenga en cuenta que los pronósticos se vuelven menos precisos con horizontes de pronóstico más grandes."""
 
 periods_input = st.number_input('¿Cuántos días le gustaría pronosticar a futuro?',
@@ -148,19 +158,12 @@ st.write(fig2)
 
 """
 La siguiente imagen muestra los valores reales (puntos negros) y predichos (línea azul) a lo largo del tiempo. El área sombreada en azul representa los intervalos de confianza superior e inferior.
+La imagen muestra el modelo final ajustado en pesos
 """
 
 fig1 = model1.plot(forecast)
 st.write(fig1)
 
-"""
-La siguiente imágen muestra el modelo final ajustado en pesos.
-"""
-custom_forecast_plot()
-
-
-metric_df = forecast.set_index('ds')[['yhat']].join(sp_sample.set_index('ds').y).reset_index()
-metric_df.dropna(inplace=True)
 
 """
 El r-cuadrado es cercano a 1 por lo que podemos concluir que el ajuste es bueno.
@@ -274,6 +277,15 @@ def custom_forecast_plot_dol():
 
 """
 ### Step 2: Seleccionar horizonte de previsión
+"""
+La siguiente imágen muestra el pronostico doloares.
+"""
+custom_forecast_plot_dol()
+# custom_forecast_plot()
+
+metric_df = forecast.set_index('ds')[['yhat']].join(sp_sample1.set_index('ds').y).reset_index()
+metric_df.dropna(inplace=True)
+
 Tenga en cuenta que los pronósticos se vuelven menos precisos con horizontes de pronóstico más grandes."""
 
 periods_input_dol = st.number_input('¿Cuántos días le gustaría pronosticar a futuro en dólares?',
@@ -319,19 +331,12 @@ st.write(fig2)
 
 """
 La siguiente imagen muestra los valores reales (puntos negros) y predichos (línea azul) a lo largo del tiempo. El área sombreada en azul representa los intervalos de confianza superior e inferior.
+Muestra el modelo ajustado en dolares:
 """
 
 fig1 = final_model_dolares.plot(forecast)
 st.write(fig1)
 
-"""
-La siguiente imágen muestra el modelo final ajustado en dólares.
-"""
-custom_forecast_plot_dol()
-# custom_forecast_plot()
-
-metric_df = forecast.set_index('ds')[['yhat']].join(sp_sample1.set_index('ds').y).reset_index()
-metric_df.dropna(inplace=True)
 
 """
 El r-cuadrado es cercano a 1 por lo que podemos concluir que el ajuste es bueno.
