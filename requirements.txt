@@ -1,3 +1,9 @@
+#PyCaret==2.3.1
+numpy==1.23.2
+pandas==1.4.3
+scikit-learn==0.24.2  # Puedes probar con esta versión más estable
+pystan==2.19.1.1  # Esta versión es más estable con Prophet 1.0
+prophet==1.0
 altair==4.2.0
 backports.zoneinfo==0.2.1
 blinker==1.5
@@ -9,7 +15,6 @@ ipywidgets==7.7.1
 jupyterlab-widgets==1.1.1
 kiwisolver==1.4.4
 matplotlib==3.5.3
-numpy==1.23.2
 pandas==1.4.3
 Pillow==9.2.0
 plotly==5.10.0
@@ -27,9 +32,4 @@ tzdata==2022.2
 tzlocal==4.2
 validators==0.20.0
 watchdog==2.1.9
-#widgetsnbextension==3.6.1
-scikit-learn==0.23.2 
-#PyCaret==2.3.1
-prophet==1.0
-pystan==2.19.1.1
 

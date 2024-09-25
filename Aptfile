@@ -1,0 +1,2 @@
+libgomp1  # Necesario para scikit-learn
+g++       # Compilador necesario para pystan y prophet
