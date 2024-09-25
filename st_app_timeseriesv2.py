@@ -1,5 +1,4 @@
 # MODELO DE TIME SERIES
-!pip install runtime.txt
 !pip install streamlit
 !pip install requirements.txt
 !pip install seaborn
