@@ -29,7 +29,7 @@ st.sidebar.subheader('What is Prophet?')
 st.sidebar.write('Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and generally handles outliers well. With this tool, the Facebook data science team aimed to achieve quick and accurate forecasting models and obtain reasonably accurate forecasts automatically.')
 
 df_pagos = pd.read_csv("pagos_moneda_filtro_campos2024.csv", engine="python", on_bad_lines='skip')
-df_pagos_dolares = pd.read_csv("pagos_moneda_filtro_campos2024.csv", engine="python", sep=',', quotechar='"', error_bad_lines=False)
+df_pagos_dolares = pd.read_csv("pagos_moneda_filtro_campos2024.csv", engine="python", sep=',', quotechar='"', on_bad_lines='skip')
 indexNames = df_pagos[df_pagos['pag_confirmar'].isnull()].index
 df_pagos.drop(indexNames, inplace=True)
 indexNames = df_pagos[df_pagos['pag_confirmar'] == 0].index
