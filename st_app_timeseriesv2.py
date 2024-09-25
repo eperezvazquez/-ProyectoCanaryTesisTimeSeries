@@ -1,4 +1,26 @@
 # MODELO DE TIME SERIES
+!pip install runtime.txt
+!pip install streamlit
+!pip install requirements.txt
+!pip install seaborn
+!pip install statsmodels
+!pip install yfinance
+!pip install optuna
+!pip install --upgrade pip
+!pip install Cython
+!pip install fbprophet --quiet
+!python -m pip install prophet
+!capture
+!pip install fbprophet
+!pip install prophet
+!pip install pystan==2.19.1.1 prophet
+!pip install --upgrade plotl
+!pip install pmdarima
+!pip install pandas-profiling
+!pip install ipywidgets
+!pip install wordcloud
+!pip install figure
+!python3 -m pip install scikit-learn
 import streamlit as st
 import pandas as pd
 import numpy as np
