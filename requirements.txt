@@ -27,7 +27,9 @@ tzdata==2022.2
 tzlocal==4.2
 validators==0.20.0
 watchdog==2.1.9
-scikit-learn==1.2.0
 #widgetsnbextension==3.6.1
-#scikit-learn==0.23.2 
+scikit-learn==0.23.2 
 #PyCaret==2.3.1
+prophet==1.0
+pystan==2.19.1.1
+
