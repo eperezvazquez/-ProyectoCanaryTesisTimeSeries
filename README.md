@@ -64,6 +64,11 @@ Evaluated user feedback and system performance to refine customer satisfaction a
 
 * Recommendation System Development: Aim to implement a comprehensive ranking system within the existing recommendation framework to optimize resource allocation and project delivery.
 
-URL: https://appregresionusc-c67e8d36ff42.herokuapp.com/
+
+* Regression
+URL Regression: https://appregresionusc-c67e8d36ff42.herokuapp.com/
 email_heroku: elisa.perez.vazquez@rai.usc.gal
 emial_github: personal.
+
+* Time Series
+URL Time series: https://apptimeseriesusc-b8ee6fe05f08.herokuapp.com/
