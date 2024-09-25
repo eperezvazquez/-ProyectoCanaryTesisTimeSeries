@@ -31,5 +31,5 @@ watchdog==2.1.9
 scikit-learn==0.23.2 
 #PyCaret==2.3.1
 pystan==2.19.1.1
-prophet==1.0
-streamlit
+
+
