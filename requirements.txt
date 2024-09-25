@@ -1,11 +1,13 @@
-
 Cython>=0.29.21
-numpy>=1.23.0,<2.0
-pystan==2.19.1.1  # O la versión compatible que estás usando
+numpy>=1.19.5,<2.0  # Esta versión es compatible con pystan y otros paquetes
 
+# Cambia pystan a una versión que no cause problemas de instalación
+pystan==2.19.1.1
+
+# Cambia Prophet a la versión compatible
 prophet==1.1.2
 
-
+# Otras dependencias necesarias
 altair==4.2.0
 asttokens==2.4.1
 blinker==1.5
@@ -67,5 +69,6 @@ tzlocal==4.2
 validators==0.20.0
 watchdog==2.1.9
 wcwidth==0.2.13
+
 
 
