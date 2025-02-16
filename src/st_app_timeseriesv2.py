@@ -328,7 +328,7 @@ The below link allows you to download the newly created forecast to your compute
 csv_exp = fcst_filtered.to_csv(index=False)
 b64 = base64.b64encode(csv_exp.encode()).decode()
 href = f'<a href="data:file/csv;base64,{b64}">Download CSV File</a> (right-click and save as ** &lt;forecast_name&gt;.csv**)'
-st.markdown(href, unsafe_allow_html=True)
+
 
 st.image('http://i3campus.co/CONTENIDOS/es-cnbguatemala/content/images/a/a7/buz%25c3%25b3n_de_correo.png')
 st.write('Por mas informacion nos puede escribir canarysoftware@gmail.com.')
