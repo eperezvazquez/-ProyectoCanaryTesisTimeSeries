@@ -330,8 +330,8 @@ b64 = base64.b64encode(csv_exp.encode()).decode()
 href = f'<a href="data:file/csv;base64,{b64}">Download CSV File</a> (right-click and save as ** &lt;forecast_name&gt;.csv**)'
 
 
-st.image('http://i3campus.co/CONTENIDOS/es-cnbguatemala/content/images/a/a7/buz%25c3%25b3n_de_correo.png')
-st.write('Por mas informacion nos puede escribir canarysoftware@gmail.com.')
+st.image('https://static5.depositphotos.com/1018728/423/i/600/depositphotos_4232702-stock-photo-red-mail-box-and-envalopes.jpg')
+st.write('For more information, you can write to us at canarysoftware@gmail.com.')
 
 #For run streamlit desde termianl
 # 1.Estar en la carpeta de streamlit cd... por ejemplo en este caso es cd src
